@@ -1,0 +1,149 @@
+---
+---
+/*START of background gradient*/
+body{
+    background: #263238;
+    color: white;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;    
+}
+.header {
+    background: linear-gradient(137deg, #f48fb1, #ce93d8);
+    color: #FFFFFF;
+    background-size: 400% 400%;
+    animation: AnimationName 10s ease infinite;
+    /* -webkit-animation: AnimationName 25s ease infinite; */
+    /* -moz-animation: AnimationName 25s ease infinite; */
+    padding: 4em 0;
+}
+.header img {
+    height: 120px;
+}
+@-webkit-keyframes AnimationName {
+   0%{background-position:0% 50%}
+   50%{background-position:100% 50%}
+   100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+   0%{background-position:0% 50%}
+   50%{background-position:100% 50%}
+   100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+   0%{background-position:0% 50%}
+   50%{background-position:100% 50%}
+   100%{background-position:0% 50%}
+}
+/*END of background gradient*/
+
+/*CENTERS stuff to the middle*/
+.centered {
+    margin: auto;
+    padding: 2em 0;
+    width: 90%;
+    max-width: 800px;
+}
+/*START of side navigation*/
+.sidenav {
+    position: fixed;
+    background-color: #111;
+    transition: 0.2s;
+    padding-top: 60px;
+    height: 100vh;
+    width: 300px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    /* font-size: 1.5em; */
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.ghost {
+    left: -300px;    
+    /* opacity: 0; */
+}
+#menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: fixed;
+    width: 1em;
+    height: 1em;
+    padding: .5rem;
+    margin: .5rem;
+    background: #263238;
+    color: white;
+    font-size: 1.5em;
+    transition-duration: .2s;
+}
+#menu-button:hover {
+    cursor: pointer;
+    background: #455a64;    
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*END of side navigation*/
+
+/*index content manipulation*/
+#index_main{
+    padding: 1em 0;
+}
+#index_main h1 {
+    /* text-shadow: 2px -5px 0 #f8bbd0, -2px 5px 0 #f48fb1, -5px -3px 0 #f48fb1; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-size: 2.5em;
+}
+#index_main p {
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    max-width: 50em;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+/*lesson post content manipulation*/
+#post {
+    text-align: left;
+    border-width: 2px;
+    border-bottom: solid;
+}
+h1 {
+    font-size: 3.5em;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+    line-height: 2;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+}
+.topbar a {
+    text-decoration: none;
+    color: #b0bec5;
+    transition-duration: .2s;
+}
+.topbar .left a {
+    margin: 0 2em 0 0;    
+}
+.topbar a:hover {
+    color: white;
+}

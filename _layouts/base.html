@@ -2,6 +2,20 @@
 <html lang="en">
 {% include head.html %}
 <body>
-    {{ content }}
+    {% include navbar.html %}
+    <div class="centered">
+        <div class="topbar">
+            <div class="left">
+                <a href="/">ISUSec</a>
+                <a href="lessons">Lessons</a>
+                <a href="projects">Projects</a>
+                <a href="resources">Resources</a>
+            </div>
+            <div class="right">
+                <a href="https://ctf.isusec.com">CTF</a>                    
+            </div>
+        </div>
+        {{ content }}            
+    </div>
 </body>
 </html>

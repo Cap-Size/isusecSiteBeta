@@ -1,9 +1,6 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
+    document.getElementById("mySidenav").classList.toggle("ghost"); 
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    let menuButton = document.getElementById("menu-button");
+    menuButton.innerHTML = menuButton.innerHTML == "☰" ? "×" : "☰";
 }
